@@ -19,3 +19,26 @@ Este projeto foi desenvolvido como parte dos meus estudos em Lógica de Programa
 
 ---
 *Projeto desenvolvido com mentoria assistida por IA, focando em aprendizado ativo e lógica de programação.*
+---
+
+🧠 Metodologia de Estudo
+Aprendizado Adaptativo: Identificação do perfil de aprendizado focado em narrativas e lógica antes da sintaxe.
+
+Gamificação: Desenvolvimento guiado através de storytelling (o cenário do "Robô Garçom").
+
+Desafio 10 Dias: Foco intensivo em lógica de programação (Dia 1/10 concluído).
+
+⚙️ Funcionalidades Implementadas (Dia 1)
+O sistema já é capaz de realizar o ciclo completo de atendimento:
+
+Cardápio Digital: Uso de Dicionários (dict) para armazenar produtos e preços, permitindo busca rápida.
+
+Interação com Usuário: Coleta dinâmica de pedidos e número da mesa via terminal.
+
+Validação e Segurança: Implementação de try/except para prevenir falhas se o usuário digitar letras em vez de números, além de verificação se o item existe no menu.
+
+Gestão de Pedidos: Armazenamento dos pedidos em uma Lista de Listas (Tickets), contendo nome, mesa e valor individual.
+
+Automação do Serviço: Loop (while) para atendimento contínuo até que o operador decida encerrar.
+
+Relatório Financeiro: Cálculo automático do faturamento total do dia ao fechar o caixa (iteração com for e acumuladores).
