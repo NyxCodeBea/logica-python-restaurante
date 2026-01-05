@@ -67,16 +67,14 @@ while True:
 # --- 4. A Cozinha (Execução) ---
 
 print("--- INICIANDO SERVIÇO ---")
-
 for ticket in pedidos_pendentes:
     servico_bebida(ticket[0], ticket[1]) # ticket[0] = Nome, ticket[1] = Mesa
 
 # --- 5. O Caixa (Fechamento) ---
 
 print("--- FECHAMENTO DO CAIXA ---")
-
 for ticket in pedidos_pendentes:
-     faturamento_total += ticket[2] # ticket[2] é o preço
+     faturamento_total += ticket[2]
 
 print(f"Total faturado no serviço: R$ {faturamento_total:.2f}")
 print("Todos os pedidos foram entregues. Bom trabalho, Robô!!")
