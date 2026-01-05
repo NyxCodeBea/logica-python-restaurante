@@ -52,18 +52,29 @@ while True:
         break
     else:
         # Pergunta o código
-        pedido_bebida = int(input("Digite o código da bebebida desejada: "))
-        mesa_solicitante = int(input("Digite o número da mesa: "))
+        try:
+            # ⚠️ ZONA DE PERIGO
+            # Aqui colocamos os inputs que podem dar erro
+            pedido_bebida = int(input("Digite o código da bebebida desejada: "))
+            mesa_solicitante = int(input("Digite o número da mesa: "))
 
-        # Traduz Código -> Nome e Preço
-        nome_da_bebida = cardapio_bebidas[pedido_bebida]
-        valor_da_bebida = cardapio_preco[pedido_bebida]
+            if pedido_bebida in cardapio_bebidas:
+                # Traduz Código -> Nome e Preço
+                nome_da_bebida = cardapio_bebidas[pedido_bebida]
+                valor_da_bebida = cardapio_preco[pedido_bebida]
 
-        # Cria o Ticket Completo
-        ticket = [nome_da_bebida, mesa_solicitante, valor_da_bebida]
-        pedidos_pendentes.append(ticket)
-        print(f"Pedido de {nome_da_bebida} anotado! Valor: R$ {valor_da_bebida:.2f}")
+                # Cria o Ticket Completo
+                ticket = [nome_da_bebida, mesa_solicitante, valor_da_bebida]
+                pedidos_pendentes.append(ticket)
+                print(f"Pedido de {nome_da_bebida} anotado! Valor: R$ {valor_da_bebida:.2f}")
+            else:
+                print("Ops! Bebida não encontrada.")   
 
+        except ValueError:
+            # 🛡️ ZONA DE SEGURANÇA (PLANO B)
+            # O código cai aqui se o usuário digitar letras
+            print("Ops! Você precisa digitar um número válido.")      
+        
 # --- 4. A Cozinha (Execução) ---
 
 print("--- INICIANDO SERVIÇO ---")
