@@ -89,3 +89,10 @@ for ticket in pedidos_pendentes:
 
 print(f"Total faturado no serviço: R$ {faturamento_total:.2f}")
 print("Todos os pedidos foram entregues. Bom trabalho, Robô!!")
+
+# 1. Abre o arquivo (modo 'w' de write/escrever)
+with open("faturamento.txt", "w") as arquivo:
+    
+    # 2. Escreve o texto dentro dele
+    arquivo.write("--- FECHAMENTO DO DIA --- \n")
+    arquivo.write(f"Total faturado no serviço: R$ {faturamento_total:.2f}")
