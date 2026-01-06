@@ -42,3 +42,19 @@ Gestão de Pedidos: Armazenamento dos pedidos em uma Lista de Listas (Tickets), 
 Automação do Serviço: Loop (while) para atendimento contínuo até que o operador decida encerrar.
 
 Relatório Financeiro: Cálculo automático do faturamento total do dia ao fechar o caixa (iteração com for e acumuladores).
+
+---
+
+## 📅 Atualização: Dia 2 - A Memória do Robô (Persistência de Dados)
+
+Nesta etapa, focamos em resolver o problema da "amnésia" do sistema. Anteriormente, os dados financeiros eram perdidos ao fechar o programa.
+
+**Novas Funcionalidades:**
+* **Persistência de Dados:** Implementação de escrita em arquivos (`.txt`) para salvar o relatório de fechamento de caixa no disco rígido.
+* **Gerenciamento de Arquivos:** Uso da estrutura `with open()` para garantir que os arquivos sejam criados, escritos e fechados com segurança, evitando corromper dados.
+* **Formatação de Texto:** Uso de caracteres de escape (`\n`) para estruturar o relatório final com quebras de linha adequadas.
+
+**Tech Stack adicionada:**
+* Manipulação de Arquivos (File I/O - Mode 'w').
+* Context Managers (`with`).
+* Formatação de Strings para Arquivos.
