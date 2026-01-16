@@ -1,5 +1,7 @@
 # 🤖 Robô Garçom - Sistema de Pedidos
 
+![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
 Um sistema de gerenciamento de pedidos para restaurantes que roda no terminal. O projeto simula o atendimento de um garçom, desde a coleta do pedido até o envio para a cozinha.
 
 ## 🚀 Sobre o Projeto
